@@ -51,7 +51,7 @@ train.loc[train.shop_id == 10, 'shop_id'] = 11
 test.loc[test.shop_id == 10, 'shop_id'] = 11
 train.loc[train.shop_id == 40, 'shop_id'] = 39
 test.loc[test.shop_id == 40, 'shop_id'] = 39
-'''
+
 shops.loc[shops.shop_name == 'Сергиев Посад ТЦ "7Я"', 'shop_name'] = 'СергиевПосад ТЦ "7Я"'
 shops['city'] = shops['shop_name'].str.split(' ').map(lambda x: x[0])
 shops.loc[shops.city == '!Якутск', 'city'] = 'Якутск'
@@ -385,7 +385,7 @@ del cats
 del train
 # leave test for submission
 gc.collect()
-'''
+
 data = pd.read_pickle('model2_data.pkl')
 data = data[[
     'date_block_num',
