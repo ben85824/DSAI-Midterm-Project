@@ -15,29 +15,29 @@
 ## feature selection
 選擇上述 1~7
 ## model selection
-Rule-based model
-LSTM
+Rule-based model<br>
+LSTM<br>
 xgbregressor
 
 ## Rule-based
-自定義規則後給予前幾個月或前一季的平均，
+自定義規則後給予前幾個月或前一季的平均<br>
 Score: 1.14475
 
 ## LSTM
-單純用LSTM預測該shop_id 第34個月 5100項產品的月銷量
-每個shop_id 建立訓練一個 model
-模型會產生很overfitting 主要原因是因為以月為單位資料量不夠
-目前正改以日為單位去計算
+單純用LSTM預測該shop_id 第34個月 5100項產品的月銷量<br>
+每個shop_id 建立訓練一個 model<br>
+模型會產生很overfitting 主要原因是因為以月為單位資料量不夠<br>
+目前正改以日為單位去計算<br>
 Score: 1.17512
 
 ## xgbregressor
-4/23 Best Score 的程式碼為基礎，多加入其他feature進行調整
-1. baseline 0.90646
-2. 刪除 city_code 以及所有12個月的lag feature: 0.91946
-3. 新增物品銷售總額變動趨勢: 0.91115
-4. 調整 model 參數: 0.91076
-...
-做了很多嘗試 但還是無法超越 baseline
+4/23 Best Score 的程式碼為基礎，多加入其他feature進行調整<br>
+1. baseline 0.90646<br>
+2. 刪除 city_code 以及所有12個月的lag feature: 0.91946<br>
+3. 新增物品銷售總額變動趨勢: 0.91115<br>
+4. 調整 model 參數: 0.91076<br>
+...<br>
+做了很多嘗試 但還是無法超越 baseline<br>
 
 
 
